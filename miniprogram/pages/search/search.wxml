@@ -1,0 +1,77 @@
+<!--pages/search/search.wxml-->
+<!-- 查询框 -->
+<view class="cu-bar bg-darkGray search">
+    <view class=" search-form  round ">
+        <text class="cuIcon-search text-green"></text>
+        <input type="text" placeholder="输入垃圾名称" confirm-type="search" focus="{{true}}" bindinput="onSearch"></input>
+    </view>
+</view>
+<!-- version1 -->
+<!--
+<view class="filter-view" wx:for="{{datas}}" wx:key 
+bindtap="onItemClick" data-index="{{item.sortId}}">
+  <view class="item-view item-o bg-white"  wx:if="{{index%2==0}}">
+    <text>{{item.name}}</text>
+    <text>{{item.sortId}}</text>
+  </view>
+   <view class="item-view item-ji bg-grey" wx:else>
+    <text  >{{item.name}}</text>
+  </view>
+</view> -->
+
+
+<!-- version2 -->
+<view class="page" data-weui-theme="{{theme}}">
+    <!-- <view class="page__hd">
+        <view class="page__title">List</view>
+        <view class="page__desc">列表</view>
+    </view> -->
+    <view class="page__bd">
+        <view class="weui-cells__title">查询结果</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{datas}}" wx:key="_id"
+                bindtap="openImg" data-index="{{item.sortId}}">
+                <view class="weui-cell__bd">{{item.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:if="{{item.sortId==1}}">可回收垃圾</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:elif="{{item.sortId==2}}">有害垃圾</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:elif="{{item.sortId==3}}">厨余垃圾</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:else="{{item.sortId==4}}">其他垃圾</view>
+            </view>
+        </view>
+
+        <!--         <view class="weui-cells__title">带图标、说明、跳转的列表项</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}"></image>
+                </view>
+                <view class="weui-cell__bd">cell standard</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}"></image>
+                </view>
+                <view class="weui-cell__bd">cell standard</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view> -->
+    </view>
+</view>
+
+<!-- <view class="cu-modal {{isShow?'show':''}}" bindtap="hideImg">
+    <view class="cu-dialog" bindtap="hideModal">
+        <image class="bg-img" src="{{Img}}"></image>
+    </view>
+</view> -->
+
+ <view class="page" data-weui-theme="{{theme}}">
+    <view wx:if="{{gallery}}" class="weui-gallery fadeIn" bindtap="closeImg">
+        <view class="weui-gallery__img__wrp">
+            <image  mode="aspectFit" class="weui-gallery__img" src="{{Img}}"></image>
+        </view>
+    </view>
+</view>
+
+
+

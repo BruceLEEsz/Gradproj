@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/filter/filter",
+    "pages/search/search",
+    "pages/file/file"
+  ],
+  "window": {
+    "backgroundColor": "#EDEDED",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0063ce",
+    "navigationBarTitleText": "垃圾分类小程序",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

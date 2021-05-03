@@ -1,0 +1,59 @@
+<!--pages/filter/filter.wxml-->
+
+<!-- <view class="filter-view" wx:for="{{datas}}" wx:key>
+  <view class="item-view item-o bg-white"  wx:if="{{index%2==0}}">
+    <image class="img" src='{{logo}}'></image>
+    <text  >{{item.name}}</text>
+  </view>
+   <view class="item-view item-ji bg-grey" wx:else>
+    <image class="img" src='{{logo}}'></image>
+    <text  >{{item.name}}</text>
+  </view>
+</view>
+ -->
+<!-- 轮播图 -->
+<swiper class="t-swiper" indicator-dots="{{indicatordots}}" indicator-active-color="{{color}}" autoplay="{{autoplay}}"
+  interval="{{interval}}" duration="{{duration}}" style="height:{{height}}" circular="true">
+  <block wx:for="{{img}}" wx:key="_id">
+    <swiper-item >
+      <image class="img" src="{{item.src}}" mode="widthFix"  bindload='imgshow'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--
+<view class="filter-view" wx:for="{{datas}}" wx:key 
+bindtap="onItemClick" data-index="{{item.sortId}}">
+  <view class="item-view item-o bg-white"  wx:if="{{index%2==0}}">
+    <text>{{item.name}}</text>
+    <text>{{item.sortId}}</text>
+  </view>
+   <view class="item-view item-ji bg-grey" wx:else>
+    <text  >{{item.name}}</text>
+  </view>
+</view> -->
+ <view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+      <view class="weui-cells__title">相关结果</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell" wx:for="{{datas}}" wx:key="_id">
+                <view class="weui-cell__bd">{{item.name}}</view>
+                <!-- <view class="weui-cell__ft">{{title}}</view> -->
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+	</view>
+	<view class="page__bd page__bd_spacing">
+		
+		
+		<view class="weui-footer">
+      <view class="margin"></view>
+			<view class="weui-footer__text">没有更多数据了～</view>
+		</view>
+	</view>
+</view>

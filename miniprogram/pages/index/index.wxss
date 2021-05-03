@@ -1,0 +1,62 @@
+
+.bg-darkGray {
+	background-color:  #ededed;
+	color:#ffffff;
+}
+.cu-bar .search-form {
+  background-color:  #ffffff;
+}
+.cu-bar .search-form input{
+  height: 100rpx;
+}
+.cu-bar .search-form{
+  height: 90rpx;
+}
+
+.padding-sm{
+  width: 100%;
+}
+.margin{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.margin_lr{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.t-swiper image {
+  width: 100%;
+  margin-top: 0;
+  border-radius: 10rpx;
+}
+
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx 50rpx;
+  border-radius: 10rpx;
+}
+
+.fenlei {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.fenlei_1{
+  display: flex;
+  flex-direction: column;
+}
+
+.solid-bottom::after {
+	border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.line{
+  width: 100%;
+  display: flex;
+  height: 5rpx;
+  background-color: rgb(139, 133, 133);
+  margin-top: 5rpx;
+  margin-bottom: 0rpx;
+}
