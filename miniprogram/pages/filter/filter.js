@@ -222,5 +222,4 @@ Page({
     }) */
     this.onGetData()
   },
-
 })

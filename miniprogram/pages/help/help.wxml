@@ -1,0 +1,53 @@
+<view class="cu-timeline">
+  <view class="cu-time">Q&A</view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>Github地址：</text> 
+    </view>
+    <view class="bg-cyan content">
+      <text>https://github.com/BruceLEEsz</text> 
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>关于本APP：</text> 
+    </view>
+    <view class="bg-cyan content">
+      <text>个人开发，提供垃圾分类相关快捷服务</text> 
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>QQQQQQQQQ</text>
+    </view>
+    <view class="bg-cyan content">
+      <text>AAAAAAAAA</text> 
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>QQQQQQQQQ</text>
+    </view>
+    <view class="bg-cyan content">
+      <text>AAAAAAAAA</text> 
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>QQQQQQQQQ</text>
+    </view>
+    <view class="bg-cyan content">
+      <text>AAAAAAAAA</text> 
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>QQQQQQQQQ</text>
+    </view>
+    <view class="bg-cyan content">
+      <text>AAAAAAAAA</text> 
+    </view>
+  </view>
+</view>
+
+

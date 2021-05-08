@@ -1,0 +1,51 @@
+<!--pages/list/list.wxml-->
+<block wx:if="{{isHasData}}">
+  <!-- version2 -->
+  <view class="page" data-weui-theme="{{theme}}">
+    <!-- <view class="page__hd">
+        <view class="page__title">List</view>
+        <view class="page__desc">列表</view>
+    </view> -->
+    <view class="page__bd">
+      <view class="weui-cells__title">查询结果</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{datas}}" wx:key="_id"
+          data-index="{{item.sortId}}">
+          <view class="weui-cell__bd">{{item.name}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" wx:if="{{item.sortId==1}}">可回收垃圾</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" wx:elif="{{item.sortId==2}}">有害垃圾</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" wx:elif="{{item.sortId==3}}">厨余垃圾</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" wx:else="{{item.sortId==4}}">其他垃圾</view>
+        </view>
+      </view>
+
+      <!--         <view class="weui-cells__title">带图标、说明、跳转的列表项</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}"></image>
+                </view>
+                <view class="weui-cell__bd">cell standard</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}"></image>
+                </view>
+                <view class="weui-cell__bd">cell standard</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view> -->
+    </view>
+  </view>
+</block>
+
+<view class="no-view" >
+  <image class="no-img" src="/images/no-result.png"></image>
+  <text class="content">未找到相关内容</text>
+  <view class="btn-view">
+    <view class="btn-commit" bindtap="onGoHome"> 回首页</view>
+    <view class="btn-commit" bindtap="commit"> 去提交</view>
+  </view>
+</view>
+

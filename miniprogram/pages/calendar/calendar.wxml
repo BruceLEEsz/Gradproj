@@ -1,0 +1,89 @@
+<!--pages/calendar/calendar.wxml-->
+
+<view wx:if="{{change==0}}" class="cu-timeline">
+  <view class="cu-time">日期提醒</view>
+  <view class="cu-item  text-green cur cuIcon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <text>周一 {{Monday}}</text> 
+    </view>
+  </view>
+  <view class="cu-item text-red cur cuIcon-noticefill">
+    <view class="content bg-red shadow-blur">
+      <text>周二</text> {{Tuesday}}
+    </view>
+  </view>
+  <view class="cu-item text-grey cur cuIcon-noticefill">
+    <view class="content bg-grey shadow-blur">
+      <text>周三</text> {{Wednesday}}
+    </view>
+  </view>
+  <view class="cu-item text-blue cur cuIcon-noticefill">
+    <view class="bg-blue content shadow-blur">
+      <text>周四</text> {{Thursday}}
+    </view>
+  </view>
+  <view class="cu-item text-orange cur cuIcon-noticefill">
+    <view class="bg-orange content shadow-blur">
+      <text>周五</text> {{Friday}}
+    </view>
+  </view>
+  <view class="cu-item text-purple cur cuIcon-noticefill">
+    <view class="bg-purple content shadow-blur">
+      <text>周六</text> {{Saturday}}
+    </view>
+  </view>
+  <view class="cu-item text-pink cur cuIcon-noticefill">
+    <view class="bg-pink content shadow-blur">
+      <text>周日</text> {{Sunday}}
+    </view>
+  </view>
+  <view class="box">
+    <view class="cu-bar btn-group">
+      <button class="cu-btn bg-blue shadow-blur round lg" bindtap="onChange">修改</button>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{change==1}}" class="cu-timeline">
+  <view class="cu-time">日期提醒</view>
+  <view class="cu-item  text-green cur cuIcon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="MondayInput" placeholder="周一"></input>
+    </view>
+  </view>
+  <view class="cu-item text-red cur cuIcon-noticefill">
+    <view class="content bg-red shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="TuesdayInput" placeholder="周二"></input>
+    </view>
+  </view>
+  <view class="cu-item text-grey cur cuIcon-noticefill">
+    <view class="content bg-grey shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="WednesdayInput" placeholder="周三"></input>
+    </view>
+  </view>
+  <view class="cu-item text-blue cur cuIcon-noticefill">
+    <view class="bg-blue content shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="ThursdayInput" placeholder="周四"></input>
+    </view>
+  </view>
+  <view class="cu-item text-orange cur cuIcon-noticefill">
+    <view class="bg-orange content shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="FridayInput" placeholder="周五"></input>
+    </view>
+  </view>
+  <view class="cu-item text-purple cur cuIcon-noticefill">
+    <view class="bg-purple content shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="SaturdayInput" placeholder="周六"></input>
+    </view>
+  </view>
+  <view class="cu-item text-pink cur cuIcon-noticefill">
+    <view class="bg-pink content shadow-blur">
+      <input maxlength="-1" disabled="{{modalName!=null}}" bindinput="SundayInput" placeholder="周日"></input>
+    </view>
+  </view>
+  <view class="box">
+    <view class="cu-bar btn-group">
+      <button class="cu-btn bg-blue shadow-blur round lg" bindtap="onSave">保存</button>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,69 @@
 <!--pages/file/file.wxml-->
-<text>pages/file/file.wxml</text>
+<!-- <view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title"></view>
+        <view class="weui-cells weui-cells_after-title" >
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{sort_img}}" wx:key="_id" bindtap="onClick"  data-index='{{index}}'>
+                <view class="weui-cell__hd">
+                    <image class = "icon" src="{{item.src}}"></image>
+                </view>
+                <view class="weui-cell__bd">{{item.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+        </view>
+    </view>
+</view> -->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title" >
+            <view class="weui-cell" bindtap="open1">
+                <view class="weui-cell__bd">国务院办公厅关于转发国家发展改革委住房城乡建设部生活垃圾分类制度实施方案的通知</view>
+                <view class="weui-cells__title">2017-03-30</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title" bindtap="open2">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">图解：国务院办公厅关于转发国家发展改革委住房城乡建设部生活垃圾分类制度实施方案的通知</view>
+                <br></br>
+                <view class="weui-cells__title">2017-03-30</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title" bindtap="open3">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">住房城乡建设部加快推进生活垃圾分类工作</view>
+                <br></br>
+                <view class="weui-cells__title">2018-01-08</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title" bindtap="open4">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">南京市人民政府关于实施生活垃圾分类的通告</view>
+                <br></br>
+                <view class="weui-cells__title">2018-07-13</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title" bindtap="open5">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">市政府办公厅关于印发南京市全面推进生活垃圾强制分类工作方案的通知_政府公报_南京市人民政府</view>
+                <br></br>
+                <view class="weui-cells__title">2020-07-20</view>
+            </view>
+        </view>
+        
+    </view>
+</view>
+
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<view class="weui-footer">
+      <view class="margin"></view>
+			<view class="weui-footer__text">没有更多数据了～</view>
+		</view>
+	</view>
+</view>

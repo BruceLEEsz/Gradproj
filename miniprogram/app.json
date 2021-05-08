@@ -3,7 +3,13 @@
     "pages/index/index",
     "pages/filter/filter",
     "pages/search/search",
-    "pages/file/file"
+    "pages/file/file",
+    "pages/function/function",
+    "pages/uplaji/uplaji",
+    "pages/calendar/calendar",
+    "pages/camera/camera",
+    "pages/list/list",
+    "pages/help/help"
   ],
   "window": {
     "backgroundColor": "#EDEDED",
@@ -12,7 +18,28 @@
     "navigationBarTitleText": "垃圾分类小程序",
     "navigationBarTextStyle": "black"
   },
-  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/tarbar/sidebar_home_hov 2.png",
+        "selectedIconPath": "images/tarbar/sidebar_home_hov.png"
+      },
+      {
+        "pagePath": "pages/function/function",
+        "text": "功能",
+        "iconPath": "images/tarbar/function.png",
+        "selectedIconPath": "images/tarbar/function1.png"
+      },
+      {
+        "pagePath": "pages/file/file",
+        "text": "政策解读",
+        "iconPath": "images/tarbar/book.png",
+        "selectedIconPath": "images/tarbar/book-2.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
