@@ -22,9 +22,15 @@ Page({
       },
       success(res) {
         console.log("成功", res);
+        wx.showToast({
+          title: '提交成功',
+        })
       },
       fail(res) {
         console.log("失败", res);
+        wx.showToast({
+          title: '提交失败',
+        })
       }
     })
   },
